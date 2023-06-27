@@ -1,0 +1,40 @@
+.ShopPageTopGrid {
+  margin-top: 1vh;
+  .center {
+    .grid {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      gap: 10px;
+      .item {
+        background-color: $BeigeColor;
+        border-radius: 10px;
+        ul {
+          li {
+            list-style: none;
+            span {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+      .category {
+        grid-row-start: 1;
+        grid-row-end: -1;
+        padding: 10px;
+      }
+      .Slider {
+        grid-column: span 3;
+        grid-row: span 2;
+      }
+      .Sale_Slider {
+        grid-column: span 3;
+        grid-row: span 3;
+      }
+      .login_block {
+        grid-row: span 5;
+      }
+    }
+  }
+}

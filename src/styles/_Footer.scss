@@ -1,0 +1,52 @@
+.Footer {
+  margin-top: 100px;
+  .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    .left {
+      display: flex;
+      img {
+        background-color: #34e0a1;
+        padding: 5px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+        margin-right: 20px;
+      }
+      .text {
+        width: 70%;
+        span {
+          font-size: 0.8rem;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            list-style: none;
+            margin-right: 20px;
+            text-decoration: underline;
+          }
+        }
+      }
+      text {
+        display: block;
+      }
+    }
+    .right {
+      display: flex;
+      select {
+        padding: 5px;
+        border-radius: 8px;
+        margin-left: 10px;
+      }
+    }
+    text {
+      margin-top: 10px;
+      font-size: 0.6rem;
+      width: 60%;
+    }
+  }
+}

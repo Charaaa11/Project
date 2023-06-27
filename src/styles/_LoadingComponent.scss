@@ -1,0 +1,13 @@
+.LoadingComponent {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #LoaderAPP {
+    z-index: 11;
+  }
+}

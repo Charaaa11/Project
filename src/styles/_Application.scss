@@ -1,0 +1,50 @@
+.Application {
+  margin-top: 13vh;
+  .center {
+    @include center(550px);
+    h1 {
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+    form {
+      input {
+        padding: 8px;
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      select {
+        display: block;
+        width: 100%;
+        padding: 7px;
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+        option {
+        }
+      }
+      button {
+        padding: 10px;
+        font-size: 1.3rem;
+        background-color: $DarkColor;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+      }
+      button:hover {
+        background-color: $lightDarkColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.BlockSlider {
+  .Slider_Content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    .text {
+      grid-column: span 1;
+      h3 {
+      }
+      p {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      a {
+        color: black;
+        font-size: 1rem;
+      }
+    }
+    .carousel-slider {
+      height: 100%;
+    }
+    .slider {
+      grid-column: span 3;
+      grid-row: span 1;
+      height: 100%;
+      .slide_object {
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        height: 300px;
+        .item {
+          height: 100%;
+          margin: 6px;
+          margin-top: 0;
+          margin-bottom: 0;
+          .img {
+          }
+          h4 {
+            width: fit-content;
+            font-size: 1.2rem;
+          }
+          .review {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span {
+              margin-right: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                margin-left: -1px;
+                height: 20px;
+                filter: $filterGreencolor;
+              }
+              span {
+                font-size: 0.8rem;
+              }
+            }
+            text {
+              color: rgba(87, 87, 87, 0.757);
+              font-size: 0.8rem;
+            }
+          }
+          h5 {
+            width: fit-content;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  }
+}

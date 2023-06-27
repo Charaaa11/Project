@@ -1,0 +1,39 @@
+.MoreToExploreBlock {
+  background-color: $PinkColor;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 5vh;
+  .center {
+    h2 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .content {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        li {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          background-color: white;
+          min-height: 300px;
+          .img {
+            img {
+              width: 355px;
+            }
+          }
+          span {
+            display: block;
+            padding: 30px;
+            font-size: 1.05rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

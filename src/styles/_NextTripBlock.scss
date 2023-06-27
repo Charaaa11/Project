@@ -1,0 +1,29 @@
+.NextTripBlock {
+  margin-top: 5vh;
+  background-color: $BeigeColor;
+  .center {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left {
+      padding: 3%;
+      h2 {
+        font-size: 1.3rem;
+      }
+      h4 {
+        font-weight: 400;
+      }
+      a {
+        @include button($DarkColor);
+      }
+    }
+    .right {
+      width: 45%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../../public/images/NextTripBlockCover.jpg);
+    }
+  }
+}

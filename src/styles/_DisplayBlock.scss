@@ -1,0 +1,50 @@
+.DisplayBlock {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  padding: 40px;
+  margin-bottom: 50px;
+  .DF {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-flow: column;
+    height: 100%;
+    h4 {
+      color: white;
+      font-size: 2.6rem;
+      margin-bottom: 40px;
+    }
+    a {
+      margin-top: 30px;
+      background-color: white;
+      padding: 13px;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      margin-top: 40px;
+      display: block;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #000000;
+      font-weight: 600;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+    width: 100%;
+    scale: 1.1;
+    transition: all ease-in-out 1.5s;
+    z-index: -1;
+    filter: brightness(0.9);
+  }
+}
+.DisplayBlock:hover {
+  img {
+    scale: 1;
+    filter: brightness(1);
+  }
+}

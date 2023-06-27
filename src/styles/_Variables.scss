@@ -1,0 +1,36 @@
+$standardpixel: 1100px;
+$GreenColor: #34e0a1;
+$OrangeColor: #f2b203;
+$BeigeColor: #ffe2d6;
+$DarkGreen: #004f32;
+$DarkColor: #000000;
+$lightDarkColor: #252525;
+$GreyColor: #e9e9e9;
+$GreyWhite: #f2f2f2;
+$DarkGrey: #afafaf;
+$PurpleColor: #dfd3ee;
+$PinkColor: #ffcccc;
+$filterWhiteColor: invert(100%) sepia(0%) saturate(0%) hue-rotate(57deg)
+  brightness(106%) contrast(101%);
+$filterDarkColor: invert(0%) sepia(0%) saturate(0%) hue-rotate(275deg)
+  brightness(93%) contrast(102%);
+$filterDarkGreen: invert(17%) sepia(45%) saturate(2868%) hue-rotate(139deg)
+  brightness(95%) contrast(101%);
+$filterGreyColor: invert(79%) sepia(52%) saturate(0%) hue-rotate(210deg)
+  brightness(78%) contrast(98%);
+$filterGreencolor: invert(73%) sepia(19%) saturate(1385%) hue-rotate(105deg)
+  brightness(97%) contrast(91%);
+@mixin center($pixelcount) {
+  max-width: $pixelcount;
+  margin: auto;
+}
+@mixin button($color) {
+  background-color: $color;
+  padding: 13px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  display: block;
+  width: fit-content;
+}

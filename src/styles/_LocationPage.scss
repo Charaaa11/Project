@@ -1,0 +1,310 @@
+.LocationPage {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    .left {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        color: $GreenColor;
+        font-size: 1.3rem;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      div {
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 25px;
+          margin-right: 3px;
+          filter: $filterDarkGreen;
+        }
+        span {
+          font-size: 1.05rem;
+          color: $DarkGreen;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .img_portfolio {
+    width: 100%;
+    max-width: 100%;
+    ul {
+      width: 100%;
+      display: grid;
+      list-style: none;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 8px;
+      grid-template-rows: 200px 200px;
+      li {
+        background-color: $lightDarkColor;
+        border-radius: 5px;
+        img {
+          height: 200px;
+        }
+      }
+      li:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+  }
+  .info_nav {
+    padding: 1.2%;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin-right: 30px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: color ease-in-out 0.1s;
+      }
+      li:hover {
+        color: $GreenColor;
+      }
+    }
+  }
+  .info {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-left: 10px;
+      }
+    }
+    .dropdowns {
+      ul {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+
+        li {
+          margin-left: 0;
+          padding: 15px;
+          transition: ease-in-out box-shadow 0.1s;
+          button {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                height: 20px;
+                filter: $filterDarkGreen;
+              }
+              span {
+                margin-left: 15px;
+                color: grey;
+                font-size: 1.05rem;
+              }
+            }
+            img {
+              height: 30px;
+              filter: $filterGreyColor;
+            }
+          }
+        }
+        li:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+  }
+  .map {
+    width: 100%;
+    h3 {
+      margin-top: 10px;
+      font-size: 2rem;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+    .Map_App_container {
+      background-color: $DarkGreen;
+      height: 600px;
+    }
+  }
+  .Prices {
+    outline: 1px solid #d8d8d8d0;
+    border-radius: 3px;
+    margin-top: 20px;
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+      padding: 20px;
+      padding-left: 15px;
+    }
+    ul {
+      li {
+        border-radius: 10px;
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #d8d8d8d0;
+        mark {
+          background-color: transparent;
+        }
+        span {
+        }
+      }
+    }
+  }
+  .other_reg_locs {
+    background-color: $lightDarkColor;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    span {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-size: 1.8rem;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        span {
+          color: $DarkGrey;
+          cursor: pointer;
+          transition: color ease-in-out 0.3s;
+        }
+        span:hover {
+          color: white;
+        }
+        img {
+          filter: $filterWhiteColor;
+          height: 26px;
+        }
+      }
+    }
+    ul {
+      margin-top: 24px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        width: 260px;
+        background-color: white;
+        color: $DarkColor;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        .image {
+          width: 100%;
+          height: 220px;
+          overflow: hidden;
+          position: relative;
+          img {
+            position: absolute;
+            left: -10%;
+            top: -30%;
+            width: 120%;
+          }
+        }
+        .loc_info {
+          padding: 12px;
+          padding-bottom: 15px;
+          h3 {
+            font-size: 1.3rem;
+          }
+          p {
+            color: grey;
+          }
+          span {
+            margin-top: 10px;
+            color: $GreenColor;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .Reviews {
+    padding-top: 20px;
+    strong {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: start;
+      align-items: center;
+      h3 {
+        font-size: 2rem;
+        margin-right: 20px;
+      }
+      span {
+        color: $GreenColor;
+        img {
+          filter: $filterGreencolor;
+          height: 15px;
+          margin-left: -3px;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        padding: 15px;
+        list-style: none;
+        .head {
+          display: flex;
+          justify-content: center;
+          .left {
+            display: flex;
+            margin-right: 100px;
+            img {
+              height: 40px;
+              width: 40px;
+            }
+            .rp {
+              display: flex;
+              flex-flow: column;
+              span {
+                display: block;
+                img {
+                  height: 23px;
+                  margin-right: -16px;
+                  filter: $filterGreencolor;
+                }
+              }
+            }
+          }
+          .right {
+            span {
+            }
+          }
+        }
+        p {
+        }
+      }
+    }
+  }
+}

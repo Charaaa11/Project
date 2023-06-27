@@ -1,0 +1,42 @@
+@import "./Variables";
+@import "./Header";
+@import "./Footer";
+
+@import "./SecNav";
+@import "./PlanTrip";
+@import "./Searchblock";
+@import "./MustGoList";
+@import "./NextTripBlock";
+@import "./MoreToExplore";
+@import "./StreamBlock";
+@import "./ShopPageTopGrid";
+@import "./ShopDealsBlock";
+@import "./AuthBlock";
+@import "./Application";
+@import "./RegionPage";
+@import "./RegionCollectionpage";
+@import "./LocationPage";
+@import "./LoadingComponent";
+@import "./Mapp_app";
+@import "./BlockSlider";
+@import "./AskedQuestions";
+@import "./DisplayBlock";
+@import "./MediaGallery";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: "Inter", sans-serif;
+}
+.center {
+  @include center($standardpixel);
+}
+div {
+  box-sizing: border-box;
+}
+.content.blurred {
+  transition: filter ease-in-out 1s;
+  filter: blur(0.1rem);
+}

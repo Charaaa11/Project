@@ -1,0 +1,123 @@
+header {
+  padding-top: 4px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid $GreyColor;
+  .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        img {
+          background-color: $GreenColor;
+          padding: 5px;
+          border-radius: 100%;
+          width: 30px;
+          height: 30px;
+          margin-right: 3px;
+        }
+        h2 {
+          letter-spacing: -1px;
+          font-size: 30px;
+          font-weight: 800;
+          color: black;
+        }
+      }
+    }
+    .right {
+      nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            border-radius: 20px;
+            height: 30px;
+            min-width: 40px;
+            padding: 6px;
+            transition: background-color ease-in-out 0.1s;
+            cursor: pointer;
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            span {
+              font-size: 17px;
+              margin-left: 10px;
+              font-weight: 600;
+            }
+          }
+          li:hover {
+            background-color: $GreyColor;
+          }
+          li.Sign_in {
+            background-color: $DarkColor;
+            color: white;
+            position: relative;
+            span {
+              font-size: 1.5rem;
+              margin: 0;
+              padding: 0;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            button {
+              border: none;
+              background-color: transparent;
+              margin-left: 4px;
+              margin-right: 4px;
+              color: white;
+              font-family: "Inter", sans-serif;
+              font-size: 17px;
+              font-weight: 500;
+              cursor: pointer;
+            }
+            .PFP {
+              span {
+              }
+            }
+            ul.PFP_DropDown {
+              display: none;
+              position: absolute;
+              top: (110%);
+              right: 0;
+              outline: 1px solid black;
+              background-color: white;
+              border-radius: 7px;
+              padding: 10px;
+              padding-right: 30px;
+              li {
+                color: black;
+                font-size: 17px;
+                font-weight: 500;
+                width: max-content;
+                button {
+                  color: black;
+                  margin: 0;
+                }
+              }
+              li:hover {
+                text-decoration: underline;
+              }
+            }
+            ul.PFP_DropDown.Active {
+              display: block;
+            }
+          }
+        }
+        li.Sign_in:hover {
+          background-color: $lightDarkColor;
+        }
+      }
+    }
+  }
+}

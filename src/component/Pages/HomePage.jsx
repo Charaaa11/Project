@@ -15,10 +15,10 @@ function Main({ RegData }) {
     <main>
       <Searchblock />
       <PlanTrip />
-      <MustGoList RegData={RegData} />
+{/*       <MustGoList RegData={RegData} /> */}
       <NextTripBlock />
-      <MustGoList RegData={RegData} />
-      <MoreToExploreBlock />
+{/*       <MustGoList RegData={RegData} /> */}
+      <MoreToExploreBlock/>
       <StreamBlock />
     </main>
   );
